@@ -1,0 +1,23 @@
+{
+  "name": "@btcpoker/server",
+  "version": "0.1.0",
+  "description": "Thin NLHE game server stub",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/index.js",
+    "test": "node -e \"console.log('server: no tests yet')\""
+  },
+  "dependencies": {
+    "@btcpoker/poker-core": "0.1.0",
+    "@btcpoker/rng": "0.1.0",
+    "@btcpoker/payments": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

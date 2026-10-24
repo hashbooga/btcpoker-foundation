@@ -1,0 +1,18 @@
+{
+  "name": "btcpoker",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NLHE poker with Bitcoin payments (mainchain, Lightning, Cashu)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @btcpoker/rng -w @btcpoker/poker-core -w @btcpoker/payments -w @btcpoker/server -w @btcpoker/client",
+    "test": "npm run test -w @btcpoker/rng -w @btcpoker/poker-core",
+    "test:rng": "npm run test -w @btcpoker/rng",
+    "typecheck": "npm run typecheck -w @btcpoker/rng -w @btcpoker/poker-core -w @btcpoker/payments -w @btcpoker/server -w @btcpoker/client"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
